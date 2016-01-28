@@ -1,0 +1,340 @@
+Last login: Wed Jan 27 15:11:57 on ttys000
+-bash: /Users/dongheelee/.bash_profile: line 11: unexpected EOF while looking for matching `"'
+-bash: /Users/dongheelee/.bash_profile: line 12: syntax error: unexpected end of file
+Dongs-MacBook-Air:~ dongheelee$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dongs-MacBook-Air:~ dongheelee$ cd desktop
+Dongs-MacBook-Air:desktop dongheelee$ cd terminal_and_git
+-bash: cd: terminal_and_git: No such file or directory
+Dongs-MacBook-Air:desktop dongheelee$ cd dojo_3/terminal_and_git
+Dongs-MacBook-Air:terminal_and_git dongheelee$ mkdir basic_repo_assignment
+Dongs-MacBook-Air:terminal_and_git dongheelee$ touch index.html
+Dongs-MacBook-Air:terminal_and_git dongheelee$ cd basic_repo_assignment
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ touch index.html
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git init
+Initialized empty Git repository in /Users/dongheelee/Desktop/dojo_3/terminal_and_git/basic_repo_assignment/.git/
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git clone https://github.com/dongheelee1/basic_repo.git
+Cloning into 'basic_repo'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git log
+fatal: your current branch 'master' does not have any commits yet
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ log
+-bash: log: command not found
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ clear
+
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ pwd
+/Users/dongheelee/desktop/dojo_3/terminal_and_git/basic_repo_assignment
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ cd ..
+Dongs-MacBook-Air:.Trash dongheelee$ cd ..
+Dongs-MacBook-Air:~ dongheelee$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dongs-MacBook-Air:~ dongheelee$ cd desktop/coding_dojo/terminal_and_git
+-bash: cd: desktop/coding_dojo/terminal_and_git: No such file or directory
+Dongs-MacBook-Air:~ dongheelee$ cd desktop
+Dongs-MacBook-Air:desktop dongheelee$ cd terminal_and_git
+-bash: cd: terminal_and_git: No such file or directory
+Dongs-MacBook-Air:desktop dongheelee$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dongs-MacBook-Air:desktop dongheelee$ cd dojo_3/terminal_and_git
+Dongs-MacBook-Air:terminal_and_git dongheelee$ mkdir basic_repo_assignment
+Dongs-MacBook-Air:terminal_and_git dongheelee$ cd basic_repo_assignment
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git clone https://github.com/dongheelee1/basic_repo.git
+Cloning into 'basic_repo'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ touch index.html
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ vi index.html
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    ../../../test/.index.html.swp
+	deleted:    ../../../test/index.html
+	deleted:    ../../../test/styles.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../../../../.CFUserTextEncoding
+	../../../../.Rapp.history
+	../../../../.Rhistory
+	../../../../.Trash/
+	../../../../.bash_history
+	../../../../.bash_profile
+	../../../../.bash_sessions/
+	../../../../.config/
+	../../../../.cups/
+	../../../../.gitconfig
+	../../../../.idlerc/
+	../../../../.npm/
+	../../../../.rstudio-desktop/
+	../../../../.ssh/
+	../../../../.viminfo
+	../../../../Applications/
+	../../../../Books/
+	../../../../CC Paper P,M,Prince.docx
+	../../../ .app/
+	../../../.localized
+	../../../Actuary FM Exam/
+	../../../Actuary P Exam /
+	../../../MOSExcel2013/
+	../../../SAS/
+	../../../columbia resources/
+	../../../dojo_1/
+	../../../dojo_2/
+	../../
+	../../../internships/
+	../../../matlab/
+	../../../r_coursera/
+	../../../technical skills/
+	../../../../Documents/
+	../../../../Downloads/
+	../../../../Leviathan Summary .docx
+	../../../../Library/
+	../../../../Machiavelli essay outline.docx
+	../../../../Movies/
+	../../../../Music/
+	../../../../Pictures/
+	../../../../Public/
+	../../../../The Prince Quotes.docx
+	../../../../VirtualBox VMs/
+	../../../../discourses on livy quotes.docx
+	../../../../leviathan.docx
+	../../../../npm-debug.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git add index.html
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git commit -m "altered index.html"
+[master 7c1722e] altered index.html
+ 1 file changed, 2 insertions(+)
+ create mode 100644 Desktop/dojo_3/terminal_and_git/basic_repo_assignment/index.html
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git remote add origin https://github.com/dongheelee1/basic_repo.git
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git push -u origin master
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/dongheelee1/basic_repo.git/'
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ echo "# basic_repo" >> README.md
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git init
+Initialized empty Git repository in /Users/dongheelee/Desktop/dojo_3/terminal_and_git/basic_repo_assignment/.git/
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git add README.md
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git commit -m "first commit"
+[master (root-commit) cbf4fb8] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git remote add origin https://github.com/dongheelee1/basic_repo.git
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git push -u origin master
+Username for 'https://github.com': dongheelee1
+Password for 'https://dongheelee1@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 229 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/dongheelee1/basic_repo.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git add index.html README.md
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git commit -m "update
+> d"
+[master 77eeb14] update d
+ 1 file changed, 2 insertions(+)
+ create mode 100644 index.html
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 338 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/dongheelee1/basic_repo.git
+   cbf4fb8..77eeb14  master -> master
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git checkout master
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git checkout -m 
+Your branch is up-to-date with 'origin/master'.
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git checkout -m 
+Your branch is up-to-date with 'origin/master'.
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git checkout -b "add_style"
+Switched to a new branch 'add_style'
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ touch style.css
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git checkout
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git status
+On branch add_style
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git merge "add_style"
+Already up-to-date.
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git merge add_style
+Already up-to-date.
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git checkout master
+M	index.html
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Everything up-to-date
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git add index.html style.css
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git commit -m  "added style.css"
+[master 222b1f2] added style.css
+ 2 files changed, 18 insertions(+), 1 deletion(-)
+ create mode 100644 style.css
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 517 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/dongheelee1/basic_repo.git
+   77eeb14..222b1f2  master -> master
+Dongs-MacBook-Air:basic_repo_assignment dongheelee$ 
